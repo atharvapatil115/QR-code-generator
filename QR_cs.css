@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Times New Roman', Times, serif; */
+
+}
+
+body {
+    background: url(img/bg.png);
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    backdrop-filter: blur(25px);
+}
+
+i {
+    font-size: 25px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#link:hover {
+    color: rgb(0, 119, 181);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#insta:hover {
+    background-image: linear-gradient(to right, rgb(132, 57, 145), rgb(253, 91, 60));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#git:hover {
+    background: black;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0px 0px 5px white);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition-timing-function: ease;
+    transition-duration: .5s;
+
+}
+
+a:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    /* box-shadow: 1px 1px 17px 1px white; */
+    border: 1px white solid;
+}
+
+.container:hover {
+
+    box-shadow: 1px 1px 20px 6px rgb(151, 215, 235);
+    backdrop-filter: blur(25px);
+    border: none;
+}
+
+.after {
+    box-shadow: 1px 1px 20px 6px rgb(151, 215, 235);
+    backdrop-filter: blur(25px);
+    border: none;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+#Textimp {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0px 20px;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    /* border-radius: 1rem; */
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+}
+
+#Textimp:hover {
+    transform: translateY(10px);
+    box-shadow: 1px 1px 10px 6px rgb(151, 215, 235);
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 1rem;
+
+}
+
+#QR_btn {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(29, 28, 28, 0.637);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+#downloadButton {
+
+    width: 50%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(29, 28, 28, 0.637);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+#QR_btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#QR_btn:active {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 17px 1px white;
+}
+
+#downloadButton {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    /* width: 200px; */
+    /* height: 30%; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.QR_img {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    transition: height 1s;
+}
+
+.image.showImg {
+    max-height: 550px;
+    max-width: 550px;
+    margin: 10px auto;
+}
